@@ -96,10 +96,11 @@
     <icon src="www/res/icon/windows/Wide310x150Logo.scale-240.png" platform="windows" width="744" height="360"/>
     <splash src="www/res/screen/windows/SplashScreenPhone.scale-240.png" platform="windows" width="1152" height="1920"/>
   </platform>
- <!--  <access origin="http://www.shopmart.co.ug" subdomains="true" /> -->
-  <access origin="*"/>
+  <access origin="http://www.shopmart.co.ug" subdomains="true" />
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
+  <allow-intent href="http://*/*/*"/>
+  <allow-intent href="https://*/*/*"/>
   <allow-intent href="tel:*"/>
   <allow-intent href="sms:*"/>
   <allow-intent href="mailto:*"/>
