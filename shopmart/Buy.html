@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>shopmart - Buy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/buy.js"></script>
+</head>
+    
+<body>
+        
+<div id="employeeListPage" data-role="page" >
+
+	<div data-role="header" data-position="fixed">
+		<h1>Products</h1>
+		<img src="css/images/shopmartl.png" width="70" height="40" class="ui-btn-left" />
+        <div data-role="navbar">
+            <ul>
+              <li><a href="index.html" rel ="external" class="ui-btn-icon-left ui-icon-home">Home</a></li>
+              <li><a href="Buy.html?fil=0" rel ="external" class="ui-btn-icon-left ui-icon-bullets">Buy</a></li>
+              <li><a href="Categories.html" rel ="external" class="ui-btn-icon-left ui-icon-tag">Categories</a></li>
+            </ul>
+        </div>
+	</div>
+
+	<div data-role="content">
+		<a href="#popupMenu" data-rel="popup" data-transition="slideup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-gear ui-btn-icon-left ui-btn-a">Sorting...</a>
+		<div data-role="popup" id="popupMenu" data-theme="a">
+		        <ul data-role="listview" data-inset="true" style="min-width:210px;">
+		            <li data-role="list-divider">Choose Sorting</li>
+		            <li><a href="Buy.html?fil=0" rel ="external">Newest</a></li>
+		            <li><a href="Buy.html?fil=1" rel ="external">Price: Low to High</a></li>
+		            <li><a href="Buy.html?fil=2" rel ="external">Price: High to Low</a></li>
+		        </ul>
+		</div>
+         <ul id="producList" data-role="listview" data-split-icon="shop" data-split-theme="a" data-filter="true"></ul>
+    </div>	
+
+</div>
+
+</body>
+</html>
