@@ -97,8 +97,6 @@
     <splash src="www/res/screen/windows/SplashScreenPhone.scale-240.png" platform="windows" width="1152" height="1920"/>
   </platform>
   <access origin="http://www.shopmart.co.ug" subdomains="true" />
-  <allow-intent href="http://*/*"/>
-  <allow-intent href="https://*/*"/>
   <allow-intent href="http://*/*/*"/>
   <allow-intent href="https://*/*/*"/>
   <allow-intent href="tel:*"/>
